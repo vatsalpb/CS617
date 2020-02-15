@@ -4,7 +4,8 @@ public class MaxSubArray {
     static Value val = new Value();
 
     public static void main(String[] args) {
-        int[] a = {-3, 4, 5, -2, 9, 7, -8, 10};
+        //int[] a = {-3, 4, 5, -2, 9, 7, -8, 10};
+        int[] a = {3, 7, 1, 2, 8, 4, 9};
         Value value = MS1(a);
 //        System.out.println(value.leftIndex);
 //        System.out.println(value.rightIndex);
