@@ -29,4 +29,23 @@ public class InsertionSort
             System.out.println();
         }
     }
+
+    // Complete the matchingStrings function below.
+    static int[] matchingStrings(String[] strings, String[] queries) {
+        int[] newCount = new int[queries.length];
+
+        for(int i = 0; i < queries.length; i++)
+        {
+            int count = 0;
+            for(String s: strings)
+            {
+                if(queries[i].equals(s))
+                {
+                    count++;
+                }
+            }
+            newCount[i]= count;
+        }
+        return newCount;
+    }
 }
